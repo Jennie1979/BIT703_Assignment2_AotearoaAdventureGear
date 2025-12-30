@@ -1,0 +1,2 @@
+# BIT703_Assignment2_AotearoaAdventureGear
+Aotearoa adventure gear
