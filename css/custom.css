@@ -1,0 +1,423 @@
+/* =========================
+   Global styles and tokens
+   ========================= */
+
+:root {
+    --brand-dark: #274447;          /* Deep green/blue pulled from logo */
+    --brand-blue: #4c7ca5;          /* Accent blue */
+    --body-bg: #ffffff;
+    --light-grey: #f5f5f5;
+    --border-light: #e2e2e2;
+    --text-main: #444444;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-main);
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.brand-text {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+      .category-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.category-box:hover,
+.product-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+    transition: 0.25s;
+}
+   
+ /* Big product image area (left column) */
+        .product-hero-image {
+            min-height: 360px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Small square image for similar products */
+        .thumb-square {
+            width: 80px;
+            height: 80px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Review avatar circle */
+        .review-avatar {
+            width: 44px;
+            height: 44px;
+            border: 1px solid #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            flex-shrink: 0;
+        }
+
+        .star-row i { margin-right: 2px; }
+        .muted-divider { border-top: 1px solid #eee; }
+
+
+
+/* =========================
+   Navbar
+   ========================= */
+
+.site-logo {
+    height: 55px;
+    width: auto;
+}
+
+.brand-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.main-menu .nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-left: 0.75rem;
+}
+
+.main-menu .nav-link.active,
+.main-menu .nav-link:hover {
+    color: var(--brand-dark) !important;
+}
+
+/* Cart button */
+
+.btn-cart {
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 999px;
+    padding-inline: 1.2rem;
+}
+
+.btn-cart:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* =========================
+   Hero and home sections
+   ========================= */
+
+.hero-section {
+    background-color: #ffffff;
+}
+
+.hero-divider {
+    width: 80px;
+    height: 2px;
+    background-color: var(--brand-blue);
+}
+
+.hero-search .form-control {
+    border-radius: 0;
+}
+
+.hero-search .input-group-text {
+    border-radius: 0;
+}
+
+/* Newsletter */
+
+.newsletter-section {
+    background-color: var(--light-grey);
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--brand-dark);
+}
+
+.newsletter-form input {
+    border-radius: 0;
+}
+
+.about-text {
+    max-width: 560px;
+}
+
+/* =========================
+   Product cards / images
+   ========================= */
+
+.product-card {
+    border-radius: 0;
+    border-color: var(--border-light);
+}
+
+.product-image-placeholder {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-placeholder i {
+    color: #b1b1b1;
+}
+
+.product-big-image {
+    border: 1px solid var(--border-light);
+    background-color: #f7f7f7;
+    min-height: 260px;
+}
+
+/* Ratings */
+
+.rating i {
+    color: #f1b400;
+    font-size: 0.9rem;
+}
+
+.small-rating i {
+    font-size: 0.8rem;
+}
+
+/* Category boxes */
+
+.category-box {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 1px solid var(--border-light);
+}
+
+/* =========================
+   Cart / checkout
+   ========================= */
+
+.checkout-steps {
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-step {
+    font-size: 0.9rem;
+    color: #777;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid transparent;
+}
+
+.checkout-step.active {
+    color: #111;
+    border-bottom-color: #111;
+    font-weight: 600;
+}
+
+.cart-thumb {
+    width: 80px;
+    height: 60px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.qty-input {
+    max-width: 90px;
+}
+
+.summary-card {
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+}
+
+.mini-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mini-thumb {
+    width: 56px;
+    height: 44px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ship-option {
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    height: 100%;
+}
+
+.pay-card {
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.pay-card + .pay-card {
+    margin-top: 1rem;
+}
+
+.muted-divider {
+    border-top: 1px solid #eee;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    font-size: 0.85rem;
+}
+
+.footer-logo-placeholder {
+    width: 36px;
+    height: 18px;
+    border-bottom: 2px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.footer a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Floating anchor
+   ========================= */
+
+.floating-anchor-link {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 2rem;
+    background-color: var(--brand-dark);
+    color: #ffffff !important;
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.floating-anchor-link.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* =========================
+   Simple form messages
+   ========================= */
+
+.form-message {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.form-message.error {
+    color: #b3261e; /* red-ish */
+}
+
+.form-message.success {
+    color: #1b5e20; /* green-ish */
+}
+
+/* =========================
+   Responsive tweaks
+   ========================= */
+
+@media (max-width: 991.98px) {
+    .navbar-brand .brand-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .product-big-image {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-menu .nav-link {
+        margin-left: 0;
+    }
+
+    .summary-box {
+        margin-top: 1rem;
+    }
+
+    .floating-anchor-link {
+        right: 1rem;
+        bottom: 1.5rem;
+    }
+}

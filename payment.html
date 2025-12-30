@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <title>Aotearoa Adventure Gear NZ | Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    
+</head>
+
+<body data-page="payment">
+
+<!-- NAVBAR -->
+<header class="border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" class="me-2 site-logo" alt="Aotearoa Adventure Gear NZ logo">
+                <span class="fw-bold text-uppercase brand-text">Aotearoa Adventure Gear NZ</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav main-menu me-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#help">Help</a></li>
+                </ul>
+
+                <a href="cart.html" class="btn btn-cart" aria-label="View shopping cart">
+                    <i class="fa-solid fa-cart-shopping me-1"></i> Your Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- CHECKOUT STEPS -->
+    <section class="py-4">
+        <div class="container">
+            <div class="checkout-steps d-flex justify-content-center gap-4 text-center">
+                <div class="checkout-step">1. Shopping Cart</div>
+                <div class="checkout-step">2. Shipping Details</div>
+                <div class="checkout-step active">3. Payment Options</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAYMENT + SUMMARY -->
+    <section class="py-5 pt-4">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+
+                <!-- LEFT: Payment method -->
+                <div class="col-12 col-lg-7">
+                    <h1 class="h4 mb-3">Payment method</h1>
+                    <hr class="muted-divider">
+
+                    <form aria-label="Payment form">
+
+                        <!-- Credit Card option -->
+                        <div class="pay-card">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="payCard" checked>
+                                <label class="form-check-label small fw-semibold" for="payCard">
+                                    Credit Card
+                                </label>
+                            </div>
+
+                            <p class="small text-muted mb-3">
+                                Enter your card details below to complete your purchase.
+                            </p>
+
+                            <!-- Card Number -->
+                            <div class="row g-2 mb-2">
+                                <div class="col-12 col-sm-6">
+                                    <label for="cardNumber" class="visually-hidden">Card Number</label>
+                                    <div class="input-group input-group-sm">
+                                        <input id="cardNumber" type="text" class="form-control"
+                                               placeholder="0000 0000 0000 0000" aria-label="Card number">
+                                        <span class="input-group-text bg-white" aria-hidden="true">
+                                            <i class="fa-regular fa-credit-card"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Expiry -->
+                                <div class="col-6 col-sm-3">
+                                    <label for="expiry" class="visually-hidden">Expiry</label>
+                                    <input id="expiry" type="text" class="form-control form-control-sm"
+                                           placeholder="MM / YY" aria-label="Expiry date">
+                                </div>
+
+                                <!-- CVC -->
+                                <div class="col-6 col-sm-3">
+                                    <label for="cvc" class="visually-hidden">CVC</label>
+                                    <input id="cvc" type="text" class="form-control form-control-sm"
+                                           placeholder="CVC" aria-label="CVC">
+                                </div>
+                            </div>
+
+                            <!-- Card Holder Name -->
+                            <div class="mb-0">
+                                <label for="cardName" class="visually-hidden">Card Holder Name</label>
+                                <input id="cardName" type="text" class="form-control form-control-sm"
+                                       placeholder="Card Holder Name" aria-label="Card holder name">
+                            </div>
+                        </div>
+
+                        <!-- PayPal option -->
+                        <div class="pay-card d-flex align-items-center justify-content-between gap-3">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="payPaypal">
+                                <label class="form-check-label small fw-semibold" for="payPaypal">
+                                    Paypal
+                                </label>
+                                <p class="small text-muted mb-0">
+                                    Pay using your PayPal account.
+                                </p>
+                            </div>
+
+                            <div class="text-muted" aria-hidden="true" style="font-size: 1.2rem;">
+                                <i class="fa-brands fa-paypal"></i>
+                                <span class="fw-semibold">PayPal</span>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex gap-2 mt-4">
+                            <!-- Pay Now could link to a thank-you page if you create it -->
+                            <a href="index.html" class="btn btn-dark btn-sm px-4">Pay Now</a>
+                            <a href="shipping.html" class="btn btn-light btn-sm px-4 border">Cancel</a>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- RIGHT: Summary -->
+                <div class="col-12 col-lg-5">
+                    <h2 class="h5 mb-3">Summary</h2>
+
+                    <div class="summary-card p-4 bg-white">
+
+                        <!-- Items preview -->
+                        <div class="mini-item">
+                            <div class="mini-thumb" aria-hidden="true">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="small text-uppercase fw-semibold mb-0">Tramping Pack</div>
+                                <div class="small text-muted">$300</div>
+                            </div>
+                        </div>
+
+                        <div class="mini-item">
+                            <div class="mini-thumb" aria-hidden="true">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="small text-uppercase fw-semibold mb-0">Thermal Set</div>
+                                <div class="small text-muted">$300</div>
+                            </div>
+                        </div>
+
+                        <!-- Coupon line -->
+                        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+                            <span class="small text-uppercase fw-semibold">Have a Coupon?</span>
+                            <i class="fa-solid fa-chevron-down small text-muted" aria-hidden="true"></i>
+                        </div>
+
+                        <!-- Totals -->
+                        <div class="pt-3">
+                           <div class="d-flex justify-content-between small mb-2">
+   			 <span class="text-muted text-uppercase">Subtotal</span>
+    			<span data-summary-subtotal>$600</span>
+			</div>
+
+			<div class="d-flex justify-content-between small mb-2">
+    			<span class="text-muted text-uppercase">Shipping</span>
+    			<span data-summary-shipping>FREE</span>
+			<div>
+
+			<div class="d-flex justify-content-between small mb-3">
+  			  <span class="text-muted text-uppercase">Taxes</span>
+   			 <span data-summary-taxes>$13</span>
+			</div>
+
+			<hr class="muted-divider my-3">
+
+			<div class="d-flex justify-content-between align-items-center">
+  			  <span class="text-uppercase small fw-semibold">Total</span>
+    			<span class="h5 mb-0" data-summary-total>$600</span>
+			</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer bg-white border-top pt-4 pb-3">
+    <div class="container text-center small">
+        <i class="fa-regular fa-copyright"></i>
+        <span class="ms-1">Aotearoa Adventure Gear NZ</span>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <title>Aotearoa Adventure Gear NZ | Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body data-page="product">
+
+<!-- NAVBAR -->
+<header class="border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" class="me-2 site-logo" alt="Aotearoa Adventure Gear NZ logo">
+                <span class="fw-bold text-uppercase brand-text">Aotearoa Adventure Gear NZ</span>
+            </a>
+
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav links -->
+            <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav main-menu me-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#help">Help</a></li>
+                </ul>
+
+                <!-- Cart button -->
+                <a href="cart.html" class="btn btn-cart" aria-label="View shopping cart">
+                    <i class="fa-solid fa-cart-shopping me-1"></i> Your Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PRODUCT HERO (IMAGE LEFT, DETAILS RIGHT) -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+
+                <!-- LEFT: Product image -->
+                <div class="col-12 col-md-6">
+                    <!-- Swap icon for a real image anytime:
+                         <img src="images/boots.jpg" alt="Tramping Pack" class="img-fluid rounded"> -->
+                    <div class="product-hero-image">
+                        <i class="fa-regular fa-image fa-4x"></i>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Product info -->
+                <div class="col-12 col-md-6">
+
+                    <!-- Title -->
+                    <h1 class="h3 mb-2">Tramping Pack</h1>
+
+                    <!-- Rating + review count -->
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="star-row" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a class="small text-decoration-none" href="#reviews">5 reviews</a>
+                    </div>
+
+                    <!-- Price + model selector row -->
+                    <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 mb-3">
+                        <div class="h4 mb-0">$300</div>
+
+                        <!-- Model / option selector -->
+                        <div class="d-flex align-items-center gap-2">
+                            <label for="modelSelect" class="small mb-0">Select model</label>
+                            <select id="modelSelect" class="form-select form-select-sm" aria-label="Select model">
+                                <option selected>Standard</option>
+                                <option>Lightweight</option>
+                                <option>Waterproof</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="muted-divider my-4">
+
+                    <!-- Short description -->
+                    <p class="small mb-4">
+                        A practical tramping pack designed for multi-day trips, offering comfortable carry, durable materials, and straightforward storage.
+                    </p>
+
+                    <!-- Add to cart button -->
+                    <button type="button" class="btn btn-primary btn-sm">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMILAR PRODUCTS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center h4 mb-4">Similar Products</h2>
+
+            <div class="row g-3 justify-content-center">
+
+                <!-- Similar product 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product.html" class="text-decoration-none text-dark">
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded bg-white h-100">
+                            <div class="thumb-square">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div>
+                                <div class="small text-uppercase fw-semibold">Daypack</div>
+                                <div class="star-row small" aria-label="4 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="small">$60</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Similar product 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product.html" class="text-decoration-none text-dark">
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded bg-white h-100">
+                            <div class="thumb-square">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div>
+                                <div class="small text-uppercase fw-semibold">Thermal Set</div>
+                                <div class="star-row small" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="small">$300</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Similar product 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="product.html" class="text-decoration-none text-dark">
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded bg-white h-100">
+                            <div class="thumb-square">
+                                <i class="fa-regular fa-image"></i>
+                            </div>
+                            <div>
+                                <div class="small text-uppercase fw-semibold">Puffer Jacket</div>
+                                <div class="star-row small" aria-label="4.5 out of 5 stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="small">$300</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="py-5" id="reviews">
+        <div class="container">
+            <h2 class="h4 mb-4">Reviews</h2>
+
+            <!-- Review 1 -->
+            <div class="d-flex gap-3 py-4 border-top">
+                <div class="review-avatar" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div class="flex-grow-1">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between gap-2">
+                        <div>
+                            <div class="small text-uppercase fw-semibold mb-0">Jennie Robinson</div>
+                            <div class="small text-muted">August 14, 2025</div>
+                        </div>
+                        <div class="star-row small" aria-label="4 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="small mt-2 mb-0">
+                        Super comfortable carry and great pocket layout. Used it on a two-day tramp and
+                        it handled wet conditions well with a liner.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="d-flex gap-3 py-4 border-top">
+                <div class="review-avatar" aria-hidden="true">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div class="flex-grow-1">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between gap-2">
+                        <div>
+                            <div class="small text-uppercase fw-semibold mb-0">Mollie Robinson</div>
+                            <div class="small text-muted">July 02, 2025</div>
+                        </div>
+                        <div class="star-row small" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="small mt-2 mb-0">
+                        Perfect size for hut trips. The hip belt is supportive and the top access makes
+                        packing easy. Highly recommend.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom border to match clean layout -->
+            <div class="border-top"></div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer bg-white border-top pt-4 pb-3" id="help">
+    <div class="container text-center small">
+        <i class="fa-regular fa-copyright"></i>
+        <span class="ms-1">Aotearoa Adventure Gear NZ</span>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

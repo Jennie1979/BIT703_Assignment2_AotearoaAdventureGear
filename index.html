@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!-- 
+  Main homepage for Aotearoa Adventure Gear NZ
+  Uses Bootstrap 5.3 for layout and components
+  Custom styles and scripts extend Bootstrap functionality
+-->
+
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+
+<!-- Page title shown in browser tab and search results -->
+    <title>Aotearoa Adventure Gear NZ | Home</title>
+
+  <!-- Enables responsive scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS for responsive layout and components -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+<!-- Google Fonts for brand typography --
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body data-page="home">
+
+<div id="top"></div>
+
+<header class="border-bottom">
+<!-- Main navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+
+            <!-- Main navigation bar -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Aotearoa Adventure Gear NZ" class="me-2 site-logo">
+                <span class="fw-bold text-uppercase brand-text">Aotearoa Adventure Gear NZ</span>
+            </a>
+
+            <!-- Search bar visible only on large screens -->
+            <form class="d-none d-lg-flex ms-3 me-auto" role="search">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text bg-white">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search products"
+                        aria-label="Search products"
+                    >
+                    <button class="btn btn-outline-primary" type="submit">
+                        Search
+                    </button>
+                </div>
+            </form>
+
+            <!-- Mobile navigation toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+
+                <!-- Search bar (mobile) -->
+                <form class="d-lg-none my-3" role="search">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Search products"
+                            aria-label="Search products"
+                        >
+                        <button class="btn btn-primary" type="submit">
+                            Search
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav mb-2 mb-lg-0 main-menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#help">Help</a>
+                    </li>
+                </ul>
+
+                <!-- Cart button -->
+                <a href="cart.html" class="btn btn-cart ms-lg-3">
+                    <i class="fa-solid fa-cart-shopping me-1"></i> Your Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+<!-- Hero section introducing the brand -->
+    <section class="hero-section py-5">
+        <div class="container text-center">
+           <h1 class="hero-title">
+                New Zealand-made premium outdoor equipment for adventure enthusiasts.
+            </h1>
+            <div class="hero-divider mx-auto mb-4"></div>
+        </div>
+    </section>
+<!-- Product category overview cards -->
+<section class="py-5">
+    <div class="container">
+
+       <!-- Three-column category layout -->
+        <div class="row text-center gy-4">
+
+<!-- Category: Footwear -->
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <div class="product-image-placeholder mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-person-hiking fa-2x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase small">Footwear</h5>
+                        <p class="small mb-0">
+                            Hiking boots and trail shoes built for Aotearoa terrain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Apparel -->
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <div class="product-image-placeholder mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-jacket fa-2x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase small">Apparel</h5>
+                        <p class="small mb-0">
+                            Technical layers designed for changing conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Packs & Gear -->
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <div class="product-image-placeholder mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-backpack fa-2x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase small">Packs & Gear</h5>
+                        <p class="small mb-0">
+                            Packs and equipment for day trips and multi-day adventures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Single CTA button -->
+        <div class="text-center mt-4">
+            <a href="shop.html" class="btn btn-primary btn-lg">
+                Shop Now
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Featured products carousel using Bootstrap -->
+    <section class="py-5 bg-light" id="featured-products">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Featured Products</h2>
+
+            <!-- Bootstrap carousel -->
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-8 col-lg-6">
+                                <div class="card product-card text-center">
+                                    <div class="card-body">
+                                        <div class="product-image-placeholder mb-3">
+                                            <i class="fa-regular fa-image fa-3x"></i>
+                                        </div>
+                                        <h5 class="card-title text-uppercase small">Hiking Boots</h5>
+                                        <p class="card-text">$300</p>
+                                        <div class="rating mb-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <a href="product.html" class="btn btn-outline-primary btn-sm">View Product</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-8 col-lg-6">
+                                <div class="card product-card text-center">
+                                    <div class="card-body">
+                                        <div class="product-image-placeholder mb-3">
+                                            <i class="fa-regular fa-image fa-3x"></i>
+                                        </div>
+                                        <h5 class="card-title text-uppercase small">Puffer Jacket</h5>
+                                        <p class="card-text">$300</p>
+                                        <div class="rating mb-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <a href="product.html" class="btn btn-outline-primary btn-sm">View Product</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#featuredCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<!-- Newsletter signup section -->
+    <section class="py-5 newsletter-section">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <h2 class="section-title">Newsletter</h2>
+                    <p class="mb-0">
+                      Get updates on new outdoor gear, technical clothing, and limited-run releases designed for
+                      Aotearoa conditions.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+<!-- Newsletter subscription form -->
+                    <form class="newsletter-form d-flex flex-column flex-md-row gap-2">
+                        <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
+                        <button type="submit" class="btn btn-primary flex-shrink-0 px-4">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Large product card (left) -->
+                <div class="col-md-6">
+                    <div class="card product-card h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-12">
+                                <div class="product-image-placeholder large d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-image fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase small mb-1">Tramping Pack</h5>
+                                    <p class="mb-1">$300</p>
+                                    <div class="rating mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smaller product cards (right column grid) -->
+                <div class="col-md-6">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6">
+                            <div class="card product-card h-100">
+                                <div class="product-image-placeholder small d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase small mb-1">Thermal Set</h6>
+                                    <p class="mb-1">$300</p>
+                                    <div class="rating small-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="card product-card h-100">
+                                <div class="product-image-placeholder small d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase small mb-1">Puffer Jacket</h6>
+                                    <p class="mb-1">$300</p>
+                                    <div class="rating small-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="card product-card h-100">
+                                <div class="product-image-placeholder small d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase small mb-1">DayPack</h6>
+                                    <p class="mb-1">$60</p>
+                                    <div class="rating small-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="card product-card h-100">
+                                <div class="product-image-placeholder small d-flex align-items-center justify-content-center">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title text-uppercase small mb-1">Gloves</h6>
+                                    <p class="mb-1">$35</p>
+                                    <div class="rating small-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- /row -->
+                </div> <!-- /col-md-6 -->
+            </div> <!-- /row -->
+        </div>
+    </section>
+
+<!-- About section describing the company and brand values -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">About Your Shop</h2>
+           <p class="mx-auto about-text">
+            Aotearoa Adventure Gear is a premium outdoor equipment retailer serving adventure
+            enthusiasts across New Zealand. We specialise in high-quality gear, technical clothing,
+            and outdoor equipment designed to perform in Aotearoa’s diverse and demanding
+            environments.
+        </p>
+        <p class="mx-auto about-text">
+            From tramping and alpine adventures to weekend escapes in the bush, our products are
+            carefully selected to offer durability, comfort, and reliability. Whether you are an
+            experienced explorer or just starting your outdoor journey, Aotearoa Adventure Gear
+            provides equipment you can trust when it matters most.
+        </p>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer bg-white border-top pt-4 pb-3" id="help">
+<!-- Footer contains company info, navigation links, and social links -->
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="footer-logo-placeholder me-2">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                    <span class="fw-semibold small text-uppercase">Aotearoa Adventure Gear NZ</span>
+                </div>
+                <p class="mb-0 small">
+                    1234 Ocean Road, Auckland, 9200 , NZ
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="row small">
+                    <div class="col-6 col-md-3">
+                        <h6 class="text-uppercase mb-2">Main Menu</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="#help">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="text-uppercase mb-2">Company</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">The Company</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="text-uppercase mb-2">Discover</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">The Team</a></li>
+                            <li><a href="#">Our History</a></li>
+                            <li><a href="#">Brand Motto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="text-uppercase mb-2">Find Us On</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-3">
+        <div class="d-flex justify-content-between align-items-center small flex-column flex-md-row">
+            <span>
+                <i class="fa-regular copyright"></i>
+                <span class="ms-1">Aotearoa Adventure Gear NZ</span>
+            </span>
+            <!-- Floating anchor link controlled by JS -->
+            <a href="#top" class="floating-anchor-link">
+                <i class="fa-solid fa-arrow-up me-1"></i> Back to top
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript bundle (required for navbar and carousel) -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Custom JavaScript for site-specific interactions -->
+<script src="js/main.js"></script>
+</body>
+</html>
